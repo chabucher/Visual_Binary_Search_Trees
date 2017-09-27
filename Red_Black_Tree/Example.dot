@@ -1,0 +1,181 @@
+digraph BST{
+	node [fontname="Helvetica"];
+	25 -> 16;
+	16 [color="black"];
+	25 -> 34;
+	34 [color="black"];
+	16 -> 8;
+	8 [color="red"];
+	16 -> 20;
+	20 [color="black"];
+	8 -> 3;
+	3 [color="black"];
+	8 -> 14;
+	14 [color="black"];
+	3 -> 1;
+	1 [color="black"];
+	3 -> 5;
+	5 [color="red"];
+	null1 [shape=point color="black"];
+	1 -> null1;
+	1 -> 2;
+	2 [color="red"];2 -> null2;
+	
+	null2 [shape=point color="black"];
+	2 -> null3;
+	null3 [shape=point color="black"];
+	
+	5 -> 4;
+	4 [color="black"];
+	5 -> 7;
+	7 [color="black"];4 -> null4;
+	
+	null4 [shape=point color="black"];
+	4 -> null5;
+	null5 [shape=point color="black"];
+	
+	7 -> 6;
+	6 [color="red"];
+	null6 [shape=point color="black"];
+	7 -> null6;6 -> null7;
+	
+	null7 [shape=point color="black"];
+	6 -> null8;
+	null8 [shape=point color="black"];
+	
+	14 -> 10;
+	10 [color="red"];
+	14 -> 15;
+	15 [color="black"];
+	10 -> 9;
+	9 [color="black"];
+	10 -> 12;
+	12 [color="black"];9 -> null9;
+	
+	null9 [shape=point color="black"];
+	9 -> null10;
+	null10 [shape=point color="black"];
+	
+	12 -> 11;
+	11 [color="red"];
+	12 -> 13;
+	13 [color="red"];11 -> null11;
+	
+	null11 [shape=point color="black"];
+	11 -> null12;
+	null12 [shape=point color="black"];
+	13 -> null13;
+	
+	null13 [shape=point color="black"];
+	13 -> null14;
+	null14 [shape=point color="black"];
+	15 -> null15;
+	
+	null15 [shape=point color="black"];
+	15 -> null16;
+	null16 [shape=point color="black"];
+	
+	20 -> 18;
+	18 [color="black"];
+	20 -> 22;
+	22 [color="red"];
+	18 -> 17;
+	17 [color="red"];
+	18 -> 19;
+	19 [color="red"];17 -> null17;
+	
+	null17 [shape=point color="black"];
+	17 -> null18;
+	null18 [shape=point color="black"];
+	19 -> null19;
+	
+	null19 [shape=point color="black"];
+	19 -> null20;
+	null20 [shape=point color="black"];
+	
+	22 -> 21;
+	21 [color="black"];
+	22 -> 24;
+	24 [color="black"];21 -> null21;
+	
+	null21 [shape=point color="black"];
+	21 -> null22;
+	null22 [shape=point color="black"];
+	
+	24 -> 23;
+	23 [color="red"];
+	null23 [shape=point color="black"];
+	24 -> null23;23 -> null24;
+	
+	null24 [shape=point color="black"];
+	23 -> null25;
+	null25 [shape=point color="black"];
+	
+	34 -> 29;
+	29 [color="black"];
+	34 -> 37;
+	37 [color="black"];
+	29 -> 27;
+	27 [color="black"];
+	29 -> 32;
+	32 [color="red"];
+	27 -> 26;
+	26 [color="red"];
+	27 -> 28;
+	28 [color="red"];26 -> null26;
+	
+	null26 [shape=point color="black"];
+	26 -> null27;
+	null27 [shape=point color="black"];
+	28 -> null28;
+	
+	null28 [shape=point color="black"];
+	28 -> null29;
+	null29 [shape=point color="black"];
+	
+	32 -> 30;
+	30 [color="black"];
+	32 -> 33;
+	33 [color="black"];
+	null30 [shape=point color="black"];
+	30 -> null30;
+	30 -> 31;
+	31 [color="red"];31 -> null31;
+	
+	null31 [shape=point color="black"];
+	31 -> null32;
+	null32 [shape=point color="black"];
+	33 -> null33;
+	
+	null33 [shape=point color="black"];
+	33 -> null34;
+	null34 [shape=point color="black"];
+	
+	37 -> 36;
+	36 [color="black"];
+	37 -> 39;
+	39 [color="black"];
+	36 -> 35;
+	35 [color="red"];
+	null35 [shape=point color="black"];
+	36 -> null35;35 -> null36;
+	
+	null36 [shape=point color="black"];
+	35 -> null37;
+	null37 [shape=point color="black"];
+	
+	39 -> 38;
+	38 [color="red"];
+	39 -> 40;
+	40 [color="red"];38 -> null38;
+	
+	null38 [shape=point color="black"];
+	38 -> null39;
+	null39 [shape=point color="black"];
+	40 -> null40;
+	
+	null40 [shape=point color="black"];
+	40 -> null41;
+	null41 [shape=point color="black"];
+	
+}
