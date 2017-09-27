@@ -1,3 +1,9 @@
+# Created by Charles Bucher on 4/6/17.
+# Copyright 2017 Charles Bucher. All rights reserved.
+
+# Small portions of red/black specified BST code used from Professor Mehdi Peiravi
+# of California State University Fullerton.
+
 import random
 import sys
 
