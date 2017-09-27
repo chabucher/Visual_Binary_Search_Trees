@@ -1,2 +1,10 @@
 # Visual_Binary_Search_Trees
-Regular and Red/Black binary search trees. Visually displays the tree to a .dot file, which can easily be compiled into a .png or .jpg.
+#
+
+Creates an output.dot file to visually represent the data layout of Regular and Red/Black binary search trees.
+
+To compile the dot file, run the following terminal command (assuming you have graphviz installed):
+
+```Bash
+$ dot -Tpng output.dot -o output.png
+```
