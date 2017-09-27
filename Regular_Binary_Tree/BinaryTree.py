@@ -227,45 +227,45 @@ def main():
     if len(sys.argv) < 2:
         print('Please provide the number of keys to enter.')
         sys.exit(1)
-    s = int(sys.argv[1])
-    parts = int(s / 3)
-    t = Tree()
-    r = list(range(1, s + 1))
+    numOfKeys = int(sys.argv[1])
+    # parts = int(s / 3)
+    myTree = Tree()
+    insertRange = list(range(1, numOfKeys + 1))
 
-    print('Randomly inserting the numbers from 1 to {}.'.format(len(r)))
+    print('Randomly inserting the numbers from 1 to {}.'.format(len(insertRange)))
 
-    random.shuffle(r)
+    random.shuffle(insertRange)
 
-    for i in r:
-        t.insert(i)
+    for i in insertRange:
+        myTree.insert(i)
 
-    f = open('a.dot', 'w')
-    writeTree(t, f)
-    f.flush()
-    f.close()
-    print('To compile, run: $ dot -Tpng a.dot -o a.png')
+    file_to = open('output.dot', 'w')
+    writeTree(myTree, file_to)
+    file_to.flush()
+    file_to.close()
+    print('To compile, run: $ dot -Tpng output.dot -o output.png')
 
     # Code commented out outpus two other .dot files that show examples of
     # randomly removing sections of the tree.
     """
-    random.shuffle(r)
+    random.shuffle(insertRange)
     
     for n in range(1, 3):
-        m = r[(n - 1) * parts: (n * parts)]
+        m = insertRange[(n - 1) * parts: (n * parts)]
         print(len(m))
         for i in m:
             print('removed {}'.format(i))
-            v = t.remove(i)
+            v = myTree.remove(i)
             if v:
                 print('\tcompleted.')
             else:
                 print('\terror.')
-        c = chr(n + 97)
-        filename = str(c) + '.dot'
-        f = open(filename, 'w')
-        writeTree(t, f)
-        f.flush()
-        f.close()
+        nextLetter = chr(n + 97)
+        filename = str(nextLetter) + '.dot'
+        file_to = open(filename, 'w')
+        writeTree(myTree, file_to)
+        file_to.flush()
+        file_to.close()
     """
 
 if __name__ == "__main__":
